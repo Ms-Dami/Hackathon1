@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Pokemon";
+  src: url("./assets/pokemon-gb-9621/PokemonGb-RAeo.ttf") format("truetype");
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Pokemon";
+  background-color: #dfdfdf;
+  color: #333;
+  text-align: center;
+  background-color: #fb1b1b;
+}
+
+.quiz-container {
+  padding: 1rem;
+  width: 90%;
+  margin: auto;
+  max-width: 800px;
+  background-color: #dfdfdf;
+  padding-top: 0px;
+  border-left: 2px #0a285f dashed;
+  border-right: 2px #0a285f dashed;
+  padding-top: 0.5rem;
+}
+
+.question {
+  margin: 40px 0;
+  font-size: 1.2rem;
+}
+.question p {
+  line-height: 2rem;
+}
+
+.answer {
+  font-family: "Pokemon";
+  background-color: #0075be;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.answer:hover {
+  background-color: #0a285f;
+}
+.answer.selected {
+  background-color: #0a285f;
+}
+
+#submit {
+  font-family: "Pokemon";
+  padding: 10px 20px;
+  background-image: url("./assets/ball.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 15rem;
+  height: 6rem;
+  color: #ffcc00;
+  font-weight: 700;
+  text-shadow: -1px -1px 0, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 3rem;
+}
+#result p {
+  font-size: 18px;
+  line-height: 2rem;
+}
+#result img {
+  width: 13rem;
+  height: auto;
+}
+
+.poke-title {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+header {
+  padding: 60px;
+  background-color: #000000;
+  color: white;
+}
+
+footer {
+  padding: 60px;
+  background-color: #000000;
+}
+footer p {
+  color: white;
+}/*# sourceMappingURL=styles.css.map */

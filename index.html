@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What Pokemon Are You?</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="poke-title">What</h1>
+      <img class="poke-title" src="./assets/International_Pokémon_logo.svg" />
+      <h1 class="poke-title">Are You?</h1>
+    </header>
+    <div class="quiz-container">
+      <div id="quiz">
+        <div class="question">
+          <!-- If true: water, ground, fire, flying, bug else: electric, ghost, dragon  -->
+          <p>Question 1: Do you like the classics?</p>
+          <button class="answer" data-answer="true">True</button>
+          <button class="answer" data-answer="false">False</button>
+        </div>
+        <div class="question">
+          <!-- If true: water, grass, ground  else: fire, electric, flying  -->
+          <p>Question 2: Do you like water?</p>
+          <button class="answer" data-answer="true">True</button>
+          <button class="answer" data-answer="false">False</button>
+        </div>
+        <div class="question">
+          <p>Question 3: Are you typically feeling too cold?</p>
+          <button class="answer" data-answer="true">True</button>
+          <button class="download-btn answer" data-answer="false">False</button>
+        </div>
+        <div class="question">
+          <p>Question 4: Are you afraid of heights?</p>
+          <button class="answer" data-answer="true">True</button>
+          <button class="answer" data-answer="false">False</button>
+        </div>
+        <div class="question">
+          <p>Question 5: Do you like to read fantasy?</p>
+          <button class="answer" data-answer="true">True</button>
+          <button class="answer" data-answer="false">False</button>
+        </div>
+        <div class="question">
+          <p>Question 6: Do you want to own your own pokemon?</p>
+          <button class="answer" data-answer="true">True</button>
+          <button class="answer" data-answer="false">False</button>
+        </div>
+        <button id="submit">Go Find the Result!</button>
+      </div>
+      <div id="result" style="display: none">
+        <h2>Your Pokemon is:</h2>
+        <p id="pokemonName"></p>
+        <p id="pokemonType"></p>
+        <img id="pokemonImage" src="" alt="Pokemon" />
+        <p id="pokemonDescription"></p>
+      </div>
+    </div>
+    <footer>
+      <audio controls autoplay>
+        <source src="./assets/Pokmon  Theme Song Karaoke Version.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <p>Created by Abigayle, Samantha & Dami</p>
+    </footer>
+  </body>
+</html>
